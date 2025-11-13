@@ -1,4 +1,6 @@
 # Task-1_Elivate_Labs_DA_Internship
 This task involved cleaning and preprocessing the Marketing Campaign Dataset to prepare it for analysis. Missing values were handled, duplicates removed, and text columns standardized. Column names were formatted uniformly, and date and numeric data types were corrected. The cleaned dataset was then saved as a new CSV file for further analysis.
-<br>
+
+
+
 In this task, I worked on cleaning and preparing the Marketing Campaign Dataset for analysis using Python in Google Colab. First, I loaded the dataset and checked its basic structure, column names, and data types to understand the information it contained. Then, I identified missing values and filled the missing income values with the median to keep the data balanced. I removed duplicate rows to ensure there were no repeated records. Next, I cleaned and standardized the column names by converting them to lowercase and replacing spaces with underscores for consistency. I also standardized text columns like Education and Marital_Status to make them uniform. The Dt_Customer column was converted into a proper datetime format, and I fixed the data types of numerical columns by converting them to integers where needed. Finally, I saved the cleaned dataset as a new CSV file, making it ready for further analysis or visualization.
