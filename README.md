@@ -10,27 +10,35 @@ In this task, I worked on cleaning and preparing the Marketing Campaign Dataset 
 Interview Questions Related To Task 1:
 
 1. What are missing values and how do you handle them?
+
 Ans: Missing values are empty or blank entries in a dataset where information is not recorded. To handle them, we can either remove the rows if they are very few or fill them using methods like mean, median, mode, or a fixed value. The choice depends on how important the missing data is and how much of it exists.
 
 2. How do you treat duplicate records?
+
 Ans: Duplicate records are repeated rows in a dataset. They can cause wrong analysis, so we identify them using functions like duplicated() and remove them using drop_duplicates(). This keeps the dataset clean and ensures the results are accurate.
 
 3. Difference between dropna() and fillna() in Pandas?
+
 Ans: dropna() removes the rows or columns that contain missing values.
 fillna() fills the missing values with a given value, such as the mean, median, or zero.
 So, in simple words, dropna deletes, while fillna replaces.
 
 4. What is outlier treatment and why is it important?
+   
 Ans:Outlier treatment means identifying and handling data points that are extremely different from the rest. These unusual values can distort averages and lead to incorrect conclusions. Outliers are treated by removing them or transforming them so that analysis becomes more reliable.
 
 5. Explain the process of standardizing data.
+    
 Ans: Standardizing data means making the format of the values consistent. This includes fixing text formats (like “single” vs “Single”), converting all column names into a uniform style, scaling numbers, or keeping similar units. This ensures that the data is clean, readable, and ready for analysis or modeling.
 
 6. How do you handle inconsistent data formats (e.g., date/time)?
+    
 Ans: Inconsistent data formats like mixed date formats are fixed by converting them to one standard format using functions like pd.to_datetime(). This helps avoid errors and makes calculations involving dates easy and accurate.
 
 7. What are common data cleaning challenges?
+
 Ans: Some common challenges include dealing with missing values, removing duplicates, fixing wrong data types, handling inconsistent formatting, identifying outliers, and cleaning messy text data. These issues take time and careful checking to fix properly.
 
 8. How can you check data quality?
+
 Ans: Data quality can be checked by looking for missing values, verifying data types, checking unique values, reviewing summary statistics, identifying duplicates, and visualizing patterns. Good quality data is complete, consistent, accurate, and ready for analysis.
