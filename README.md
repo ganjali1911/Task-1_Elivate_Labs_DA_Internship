@@ -1,44 +1,104 @@
-# Task-1_Elivate_Labs_DA_Internship
-This task involved cleaning and preprocessing the Marketing Campaign Dataset to prepare it for analysis. Missing values were handled, duplicates removed, and text columns standardized. Column names were formatted uniformly, and date and numeric data types were corrected. The cleaned dataset was then saved as a new CSV file for further analysis.
+# Task 1 – Data Cleaning & Preprocessing
+### Data Analyst Internship – Marketing Campaign Dataset
+** Created by: Anjali Gupta **
+
+## Project Overview
+This project is part of Task 1 of the Data Analyst Internship, where the main objective was to clean and preprocess a real-world dataset to make it ready for analysis.
+I worked with the **Marketing Campaign Dataset**, which contains customer demographics, spending behavior, campaign responses, and purchase activity. The goal was to identify and correct common data issues such as missing values, duplicates, messy column names, inconsistent text formatting, incorrect date formats, and wrong data types.
+
+## Task Objective
+The purpose of this task was to:
+- Identify missing values and fix them appropriately
+- Remove duplicate records
+- Clean and standardize column names
+- Format text fields for consistency
+- Convert date columns into a readable format
+- Correct and validate numerical data types
+- Produce a clean, structured dataset ready for analysis or modeling
+
+## What I Did in This Task
+1️. Loaded and Inspected the Dataset
+- Imported the dataset into Google Colab
+- Displayed initial rows to understand structure
+- Checked column names, data types, and dataset dimensions
+- Identified initial data quality issues
+
+2️. Identified & Handled Missing Values
+- Used .isnull().sum() to detect missing entries
+- Found missing values mainly in the Income column
+- Filled missing Income values using the median, keeping distribution stable
+
+3️. Removed Duplicate Records
+- Detected duplicates using .duplicated()
+-  Safely removed duplicate rows using .drop_duplicates()
+
+4️. Cleaned & Standardized Column Names
+Transformed all column names to:
+- lowercase
+- no special characters
+- no spaces
+- This ensures consistency across analysis tools.
+
+5️. Standardized Text Values
+Fixed inconsistent formatting in:
+- Education
+- Marital_Status
+- Converted to consistent title-case for cleaner grouping during analysis.
+
+6️. Converted Date Columns to Proper Format
+- Converted Dt_Customer to proper datetime format
+- Used dayfirst=True to correctly parse European-style dates
+
+7️. Corrected Data Types
+- Converted numerical fields (year, kids, purchases, web visits, etc.) to integer
+- Ensured accurate computation and analysis
+
+8️. Saved the Cleaned Dataset
+- Exported final cleaned dataset as **marketing_campaign_cleaned.csv**
+- Stored in the task folder for final submission
+
+## Summary of Data Cleaning
+This task successfully transformed a raw dataset into a clean, structured, and analysis-ready format.
+Key achievements include:
+- Missing values cleaned
+- Duplicate rows removed
+- Columns standardized
+- Dates formatted correctly
+- Numeric data types fixed
+- Dataset saved and documented
+
+## Key Learning Outcomes
+
+Through this task, I gained hands-on experience with:
+- Pandas for real-world data cleaning
+- Handling missing data responsibly
+- Detecting and removing duplicates
+- Standardizing messy text data
+- Working with dates and data types
+- Preparing datasets for analysis or machine learning models
+- This task greatly improved my understanding of data preprocessing, a crucial step before any meaningful analysis or visualization.
+
+## Submission Content
+- Task1.ipynb – Google Colab Notebook
+- marketing_campaign.csv – Original Dataset
+- marketing_campaign_cleaned.csv – Final Cleaned Dataset
+- README.md – Documentation of the entire process
+
+## Final Insights & Readiness
+The cleaned Marketing Campaign dataset is now ready for:
+- Exploratory Data Analysis
+- Customer segmentation
+- Campaign performance evaluation
+- Modeling and prediction
+- Dashboard creation
+- The preprocessing phase ensures all future analysis is accurate and reliable.
 
 
+## Task 1 – Data Cleaning & Preprocessing - a short Summary
+Marketing Campaign Dataset | Data Analyst Internship
 
-In this task, I worked on cleaning and preparing the Marketing Campaign Dataset for analysis using Python in Google Colab. First, I loaded the dataset and checked its basic structure, column names, and data types to understand the information it contained. Then, I identified missing values and filled the missing income values with the median to keep the data balanced. I removed duplicate rows to ensure there were no repeated records. Next, I cleaned and standardized the column names by converting them to lowercase and replacing spaces with underscores for consistency. I also standardized text columns like Education and Marital_Status to make them uniform. The Dt_Customer column was converted into a proper datetime format, and I fixed the data types of numerical columns by converting them to integers where needed. Finally, I saved the cleaned dataset as a new CSV file, making it ready for further analysis or visualization.
+In this task, I cleaned and prepared the Marketing Campaign Dataset using Python (Pandas) in Google Colab. I began by inspecting the data structure, checking column names, data types, and identifying issues such as missing values, duplicates, and inconsistent formatting. I handled missing values by filling Income gaps with the median, removed duplicate records, and standardized column names using a consistent lowercase snake_case format. Text fields like Education and Marital_Status were cleaned for uniformity, and the Dt_Customer column was converted into proper datetime format. Numerical columns were also corrected to their appropriate data types. After completing the cleaning steps, I exported the final dataset as marketing_campaign_cleaned.csv, making it fully ready for further analysis, visualization, or modeling.
 
-
-
-Interview Questions Related To Task 1:
-
-1. What are missing values and how do you handle them?
-
-Ans: Missing values are empty or blank entries in a dataset where information is not recorded. To handle them, we can either remove the rows if they are very few or fill them using methods like mean, median, mode, or a fixed value. The choice depends on how important the missing data is and how much of it exists.
-
-2. How do you treat duplicate records?
-
-Ans: Duplicate records are repeated rows in a dataset. They can cause wrong analysis, so we identify them using functions like duplicated() and remove them using drop_duplicates(). This keeps the dataset clean and ensures the results are accurate.
-
-3. Difference between dropna() and fillna() in Pandas?
-
-Ans: dropna() removes the rows or columns that contain missing values.
-fillna() fills the missing values with a given value, such as the mean, median, or zero.
-So, in simple words, dropna deletes, while fillna replaces.
-
-4. What is outlier treatment and why is it important?
-   
-Ans:Outlier treatment means identifying and handling data points that are extremely different from the rest. These unusual values can distort averages and lead to incorrect conclusions. Outliers are treated by removing them or transforming them so that analysis becomes more reliable.
-
-5. Explain the process of standardizing data.
-    
-Ans: Standardizing data means making the format of the values consistent. This includes fixing text formats (like “single” vs “Single”), converting all column names into a uniform style, scaling numbers, or keeping similar units. This ensures that the data is clean, readable, and ready for analysis or modeling.
-
-6. How do you handle inconsistent data formats (e.g., date/time)?
-    
-Ans: Inconsistent data formats like mixed date formats are fixed by converting them to one standard format using functions like pd.to_datetime(). This helps avoid errors and makes calculations involving dates easy and accurate.
-
-7. What are common data cleaning challenges?
-
-Ans: Some common challenges include dealing with missing values, removing duplicates, fixing wrong data types, handling inconsistent formatting, identifying outliers, and cleaning messy text data. These issues take time and careful checking to fix properly.
-
-8. How can you check data quality?
-
-Ans: Data quality can be checked by looking for missing values, verifying data types, checking unique values, reviewing summary statistics, identifying duplicates, and visualizing patterns. Good quality data is complete, consistent, accurate, and ready for analysis.
+## Author
+**Anjali Gupta**
+Data Analyst Intern
