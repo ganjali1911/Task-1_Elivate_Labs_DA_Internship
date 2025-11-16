@@ -1,6 +1,6 @@
 # Task 1 – Data Cleaning & Preprocessing
 ### Data Analyst Internship – Marketing Campaign Dataset
-** Created by: Anjali Gupta **
+**Created by: Anjali Gupta**
 
 ## Project Overview
 This project is part of Task 1 of the Data Analyst Internship, where the main objective was to clean and preprocess a real-world dataset to make it ready for analysis.
@@ -100,5 +100,5 @@ Marketing Campaign Dataset | Data Analyst Internship
 In this task, I cleaned and prepared the Marketing Campaign Dataset using Python (Pandas) in Google Colab. I began by inspecting the data structure, checking column names, data types, and identifying issues such as missing values, duplicates, and inconsistent formatting. I handled missing values by filling Income gaps with the median, removed duplicate records, and standardized column names using a consistent lowercase snake_case format. Text fields like Education and Marital_Status were cleaned for uniformity, and the Dt_Customer column was converted into proper datetime format. Numerical columns were also corrected to their appropriate data types. After completing the cleaning steps, I exported the final dataset as marketing_campaign_cleaned.csv, making it fully ready for further analysis, visualization, or modeling.
 
 ## Author
-**Anjali Gupta**
+**Anjali Gupta**  
 Data Analyst Intern
